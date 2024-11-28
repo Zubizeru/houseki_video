@@ -1,0 +1,83 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo e HTML */
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Remove barras de rolagem */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo */
+.logotipo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Botão hambúrguer */
+.hamburger {
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none; /* Esconde o botão em telas maiores */
+}
+
+/* Menu padrão (para telas maiores) */
+.menu {
+  list-style: none;
+  display: flex; /* Exibe o menu horizontalmente */
+  flex-direction: row;
+  gap: 20px;
+}
+
+.menu.hidden {
+  display: flex; /* Garante que o menu apareça em telas maiores */
+  flex-direction: row; /* Distribuição horizontal */
+}
+
+.menu li {
+  text-align: center;
+}
+
+.menu button {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu button:hover {
+  color: #ff9800;
+}
+
+/* Estilo do vídeo de fundo */
+#videoFundo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1; /* Mantém o vídeo atrás do conteúdo */
+}

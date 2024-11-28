@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Deslizante com Vídeo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Botão hambúrguer -->
+            <button class="hamburger" id="menu-toggle" aria-label="Abrir Menu">☰</button>
+            
+            <!-- Menu -->
+            <ul class="menu hidden" id="menu">
+                <li>
+                    <button class="menu-close" id="menu-close" aria-label="Fechar Menu">✖</button>
+                </li>
+                <li><button onclick="executarExercicio1()">Exercício 1</button></li>
+                <li><button onclick="executarExercicio2()">Exercício 2</button></li>
+                <li><button onclick="executarExercicio3()">Exercício 3</button></li>
+                <li><button onclick="executarExercicio4()">Exercício 4</button></li>
+                <li><button onclick="executarExercicio5()">Exercício 5</button></li>
+            </ul>
+            
+            <!-- Logotipo -->
+            <p class="logotipo">MeuSite</p>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Vídeo de fundo -->
+        <video autoplay muted loop id="videoFundo">
+            <source src="FloatingPhos.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+    </main>
+
+    <!-- Script do menu -->
+    <script src="menu.js"></script>
+</body>
+</html>
