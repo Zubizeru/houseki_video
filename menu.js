@@ -1,7 +1,7 @@
 // Selecionar elementos
 const menuToggle = document.getElementById('menu-toggle'); // Botão hamburguer
-const menu = document.getElementById('menu'); // Menu
-const menuClose = document.getElementById('menu-close'); // Botão "X"
+const menu = document.getElementById('menu'); 
+const menuClose = document.getElementById('menu-close');
 
 // Abrir o menu ao clicar no botão hamburguer
 menuToggle.addEventListener('click', () => {

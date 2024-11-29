@@ -9,7 +9,7 @@
 body, html {
   height: 100%;
   font-family: Arial, sans-serif;
-  overflow: hidden; /* Remove barras de rolagem */
+  overflow: hidden;
 }
 
 /* Navbar */
@@ -37,20 +37,20 @@ body, html {
   border: none;
   color: white;
   cursor: pointer;
-  display: none; /* Esconde o botão em telas maiores */
+  display: none;
 }
 
 /* Menu padrão (para telas maiores) */
 .menu {
   list-style: none;
-  display: flex; /* Exibe o menu horizontalmente */
+  display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
 .menu.hidden {
-  display: flex; /* Garante que o menu apareça em telas maiores */
-  flex-direction: row; /* Distribuição horizontal */
+  display: flex; 
+  flex-direction: row;
 }
 
 .menu li {
@@ -67,7 +67,7 @@ body, html {
 }
 
 .menu button:hover {
-  color: #ff9800;
+  color: #00c7cc;
 }
 
 /* Estilo do vídeo de fundo */
@@ -79,5 +79,5 @@ body, html {
   height: 100vh;
   transform: translate(-50%, -50%);
   object-fit: cover;
-  z-index: -1; /* Mantém o vídeo atrás do conteúdo */
+  z-index: -1;
 }
